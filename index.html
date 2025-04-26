@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonathan's World</title>
+    <style>
+        /* Add a Star Wars-themed background */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/10/star-wars-comics.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Style the text */
+        h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            color: yellow;
+            text-shadow: 2px 2px 5px black;
+            animation: textAnimation 3s infinite alternate;
+        }
+
+        /* Add animation for the text */
+        @keyframes textAnimation {
+            0% {
+                transform: scale(1);
+                color: yellow;
+            }
+            100% {
+                transform: scale(1.2);
+                color: white;
+            }
+        }
+
+        /* Spinning happy face emoji */
+        .happy-face {
+            font-size: 6rem;
+            position: absolute;
+            bottom: 10%;
+            animation: spin 4s linear infinite;
+        }
+
+        /* Spinning animation */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content -->
+    <div>
+        <h1>Welcome to Yonathan's World</h1>
+    </div>
+    <!-- Spinning happy face -->
+    <div class="happy-face">😊</div>
+</body>
+</html>
