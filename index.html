@@ -3,67 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yonathan's World</title>
+    <title>About Yonathan Mendenhall</title>
     <style>
-        /* Add a Star Wars-themed background */
+        /* Add a marble-style background */
         body {
             margin: 0;
-            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            background: url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') no-repeat center center fixed;
+            background-size: cover;
+            color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/10/star-wars-comics.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
+            min-height: 100vh;
         }
 
-        /* Style the text */
+        /* Container for content */
+        .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Style for the animated title */
         h1 {
-            font-size: 5rem;
-            font-weight: bold;
-            color: yellow;
-            text-shadow: 2px 2px 5px black;
-            animation: textAnimation 3s infinite alternate;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out infinite alternate;
         }
 
-        /* Add animation for the text */
-        @keyframes textAnimation {
+        /* Keyframes for animated text */
+        @keyframes fadeIn {
             0% {
-                transform: scale(1);
-                color: yellow;
+                color: #000;
+                letter-spacing: 1px;
             }
             100% {
-                transform: scale(1.2);
-                color: white;
+                color: #444;
+                letter-spacing: 5px;
             }
         }
 
-        /* Spinning happy face emoji */
-        .happy-face {
-            font-size: 6rem;
-            position: absolute;
-            bottom: 10%;
-            animation: spin 4s linear infinite;
+        /* Style for the main paragraph content */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
 
-        /* Spinning animation */
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
+        /* Add a subtle hover effect on text */
+        p:hover {
+            color: #555;
+        }
+
+        /* Footer style */
+        footer {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Main content -->
-    <div>
-        <h1>Welcome to Yonathan's World</h1>
+    <div class="content-wrapper">
+        <h1>About Yonathan Mendenhall</h1>
+        <p>
+            My name is Yonathan Mendenhall, and I am 24 years old. I have been pursuing a degree in Computer Science for the past two years with a GPA of 3.1. I am deeply interested in becoming a Software Engineer and am also open to exploring roles such as Data Analyst or Account Specialist within the tech industry.
+        </p>
+        <p>
+            I have four years of experience using MariaDB database software. At the age of 14, I created an online game, and by 15, I opened my first business fixing iPhones' software, jailbreaking iPhones, unlocking phones, hard-resetting computers, and unlocking devices.
+        </p>
+        <p>
+            I possess strong leadership skills, am very reliable, a great listener, and eager to learn. I am an energetic individual with a great heart, and I thrive on new challenges and opportunities for growth.
+        </p>
+        <footer>© 2025 Yonathan Mendenhall | All Rights Reserved</footer>
     </div>
-    <!-- Spinning happy face -->
-    <div class="happy-face">😊</div>
 </body>
 </html>
